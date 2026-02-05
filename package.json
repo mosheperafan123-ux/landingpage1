@@ -1,0 +1,15 @@
+{
+  "name": "ar-technocode-landing",
+  "version": "1.0.0",
+  "description": "Landing page AR Technocode - Sistema ION",
+  "scripts": {
+    "start": "serve -s . -l $PORT",
+    "dev": "serve -s . -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

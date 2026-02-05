@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AR Technocode - Sistemas de Inteligencia Artificial Propietaria que automatizan su agenda y brindan atención de clase mundial 24/7.">
+    <title>AR Technocode | Automatización Inteligente 24/7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado de red neuronal -->
+    <div class="neural-bg">
+        <canvas id="neuralCanvas"></canvas>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Sistema Activo 24/7
+                </div>
+                <h1 class="hero-title">
+                    Su empresa operando <span class="gradient-text">24/7</span> sin descanso.
+                </h1>
+                <h2 class="hero-subtitle">
+                    Implementamos Sistemas de Inteligencia Artificial Propietaria que automatizan su agenda y brindan atención de clase mundial mientras usted duerme.
+                </h2>
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn btn-primary">
+                        <span class="btn-icon">🔍</span>
+                        Auditar mi Sistema de Reservas
+                    </a>
+                    <a href="#simulador" class="btn btn-ghost">
+                        Ver Demo en Vivo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-suffix">seg</span>
+                        <span class="stat-label">Tiempo de respuesta</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Disponibilidad</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="0">0</span>
+                        <span class="stat-label">Leads perdidos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Descubre más</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- EL PROBLEMA -->
+    <section id="problema" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">El Problema</span>
+                <h2 class="section-title">El <span class="text-danger">Costo del Silencio</span></h2>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card problem-main">
+                    <div class="problem-icon">💰</div>
+                    <h3>¿Cuántos pacientes pierde su clínica mientras su recepción está cerrada?</h3>
+                    <p class="problem-highlight">La respuesta tardía es el <strong>asesino silencioso</strong> de su facturación.</p>
+                </div>
+                
+                <div class="stats-cards">
+                    <div class="problem-card stat-card">
+                        <div class="stat-big">78%</div>
+                        <p>de los clientes compran al <strong>primero que responde</strong></p>
+                        <span class="stat-source">— Harvard Business Review</span>
+                    </div>
+                    
+                    <div class="problem-card stat-card">
+                        <div class="stat-big">5 min</div>
+                        <p>La tasa de conversión cae <strong>400%</strong> después de 5 minutos sin respuesta</p>
+                        <span class="stat-source">— InsideSales.com</span>
+                    </div>
+                    
+                    <div class="problem-card stat-card danger">
+                        <div class="stat-big">$2,340</div>
+                        <p>Pérdida promedio mensual por leads no atendidos en clínicas</p>
+                        <span class="stat-source">— Estudio Interno AR Technocode</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="valley-death">
+                <div class="valley-header">
+                    <span class="valley-icon">📉</span>
+                    <h3>El "Valle de la Muerte" de Respuesta</h3>
+                </div>
+                <div class="valley-chart">
+                    <div class="valley-bar" data-value="100" data-time="1 min">
+                        <div class="bar-fill"></div>
+                        <span class="bar-label">100% conversión</span>
+                    </div>
+                    <div class="valley-bar" data-value="80" data-time="5 min">
+                        <div class="bar-fill"></div>
+                        <span class="bar-label">80%</span>
+                    </div>
+                    <div class="valley-bar" data-value="35" data-time="30 min">
+                        <div class="bar-fill"></div>
+                        <span class="bar-label">35%</span>
+                    </div>
+                    <div class="valley-bar danger" data-value="10" data-time="1 hora">
+                        <div class="bar-fill"></div>
+                        <span class="bar-label">10%</span>
+                    </div>
+                    <div class="valley-bar danger" data-value="2" data-time="24 hrs">
+                        <div class="bar-fill"></div>
+                        <span class="bar-label">2%</span>
+                    </div>
+                </div>
+                <p class="valley-caption">Cada minuto que pasa, su oportunidad de venta se desploma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LA SOLUCIÓN: ION -->
+    <section id="solucion" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">La Solución</span>
+                <h2 class="section-title">Presentando <span class="gradient-text">ION</span></h2>
+                <p class="section-description">No es un chatbot. Es su <strong>empleado digital</strong> de élite.</p>
+            </div>
+
+            <div class="ion-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                            <line x1="12" y1="19" x2="12" y2="23"/>
+                            <line x1="8" y1="23" x2="16" y2="23"/>
+                        </svg>
+                    </div>
+                    <h3>Comprensión de Audio Nativa</h3>
+                    <p>Entiende y responde <strong>notas de voz de WhatsApp</strong> como un humano. Ningún mensaje queda sin atender.</p>
+                    <div class="feature-badge">Exclusivo</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                            <path d="M9 16l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Gestión de Agenda Autónoma</h3>
+                    <p>Se conecta a su calendario y <strong>cierra la cita sin intervención</strong>. Agenda, confirma y recuerda.</p>
+                    <div class="feature-badge">Automatizado</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                            <line x1="12" y1="2" x2="12" y2="22"/>
+                        </svg>
+                    </div>
+                    <h3>Tecnología "Private Tech"</h3>
+                    <p>Desarrollado con <strong>código a medida (Python/JS)</strong>, sin depender de plataformas inestables no-code.</p>
+                    <div class="feature-badge">Robusto</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR -->
+    <section id="simulador" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Demostración en Vivo</span>
+                <h2 class="section-title">ION vs Respuesta Humana</h2>
+                <p class="section-description">Vea la diferencia en tiempo real. Un segundo puede costar miles.</p>
+            </div>
+
+            <div class="simulator-container">
+                <div class="simulator-controls">
+                    <button id="startSimulation" class="btn btn-primary btn-large">
+                        <span class="btn-icon">▶️</span>
+                        Iniciar Simulación
+                    </button>
+                    <button id="resetSimulation" class="btn btn-ghost">
+                        Reiniciar
+                    </button>
+                </div>
+
+                <div class="simulator-grid">
+                    <!-- ION Response -->
+                    <div class="chat-window ion-chat">
+                        <div class="chat-header">
+                            <div class="chat-avatar ion">
+                                <span>ION</span>
+                            </div>
+                            <div class="chat-info">
+                                <h4>Sistema ION</h4>
+                                <span class="status online">En línea 24/7</span>
+                            </div>
+                            <div class="timer" id="ionTimer">00:00</div>
+                        </div>
+                        <div class="chat-messages" id="ionMessages">
+                            <div class="message-placeholder">
+                                <span>Esperando mensaje del cliente...</span>
+                            </div>
+                        </div>
+                        <div class="chat-result" id="ionResult">
+                            <span class="result-icon">✓</span>
+                            <span class="result-text">Cita agendada</span>
+                        </div>
+                    </div>
+
+                    <!-- Human Response -->
+                    <div class="chat-window human-chat">
+                        <div class="chat-header">
+                            <div class="chat-avatar human">
+                                <span>👤</span>
+                            </div>
+                            <div class="chat-info">
+                                <h4>Recepción Tradicional</h4>
+                                <span class="status offline">Horario limitado</span>
+                            </div>
+                            <div class="timer" id="humanTimer">00:00</div>
+                        </div>
+                        <div class="chat-messages" id="humanMessages">
+                            <div class="message-placeholder">
+                                <span>Esperando mensaje del cliente...</span>
+                            </div>
+                        </div>
+                        <div class="chat-result lost" id="humanResult">
+                            <span class="result-icon">✗</span>
+                            <span class="result-text">Lead perdido</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simulator-summary" id="simulatorSummary">
+                    <div class="summary-item">
+                        <span class="summary-label">Diferencia de respuesta:</span>
+                        <span class="summary-value" id="timeDifference">—</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Resultado ION:</span>
+                        <span class="summary-value success" id="ionSummary">—</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Resultado Tradicional:</span>
+                        <span class="summary-value danger" id="humanSummary">—</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLLOW-UP AGRESIVO -->
+    <section id="followup" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Funcionalidad Estrella</span>
+                <h2 class="section-title">Recuperación de <span class="gradient-text">Leads Perdidos</span></h2>
+                <p class="section-description">Nuestro sistema no solo responde, <strong>persigue</strong>.</p>
+            </div>
+
+            <div class="followup-flow">
+                <div class="flow-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Cliente pregunta precio</h4>
+                        <p>El prospecto muestra interés pero no agenda</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Seguimiento inteligente</h4>
+                        <p>ION inicia secuencia persuasiva a las 2 horas</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Oferta de valor</h4>
+                        <p>Mensaje personalizado con beneficio exclusivo</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step highlight">
+                    <div class="step-number">✓</div>
+                    <div class="step-content">
+                        <h4>Conversión lograda</h4>
+                        <p>Lead recuperado y cita agendada</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="followup-stats">
+                <div class="followup-stat">
+                    <span class="big-number">35%</span>
+                    <span class="stat-desc">de leads "perdidos" se recuperan con follow-up inteligente</span>
+                </div>
+                <div class="followup-stat">
+                    <span class="big-number">3x</span>
+                    <span class="stat-desc">más conversiones que sistemas tradicionales sin seguimiento</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTORES -->
+    <section id="sectores" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Mercados Objetivo</span>
+                <h2 class="section-title">Diseñado para <span class="gradient-text">Resultados</span></h2>
+            </div>
+
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <div class="sector-icon">🦷</div>
+                    <h3>Clínicas Dentales</h3>
+                    <p>Enfoque en <strong>urgencias y tratamientos de alto valor</strong>. Capture pacientes cuando más lo necesitan.</p>
+                    <ul class="sector-benefits">
+                        <li>Atención de urgencias 24/7</li>
+                        <li>Agenda de implantes automatizada</li>
+                        <li>Recordatorios inteligentes</li>
+                    </ul>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">✨</div>
+                    <h3>Centros de Estética</h3>
+                    <p>Enfoque en <strong>recurrencia</strong>. Convierte una cita en un cliente de por vida.</p>
+                    <ul class="sector-benefits">
+                        <li>Programación de tratamientos</li>
+                        <li>Follow-up post-procedimiento</li>
+                        <li>Promociones personalizadas</li>
+                    </ul>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">💆</div>
+                    <h3>Salones de Belleza / Spa</h3>
+                    <p>Enfoque en <strong>volumen de citas</strong>. Maximice su capacidad sin aumentar personal.</p>
+                    <ul class="sector-benefits">
+                        <li>Multi-servicio simultáneo</li>
+                        <li>Gestión de cancelaciones</li>
+                        <li>Lista de espera automática</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE AR TECHNOCODE -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Sobre Nosotros</span>
+                    <h2 class="section-title">AR Technocode</h2>
+                    <div class="philosophy-quote">
+                        <blockquote>
+                            "No somos una agencia de marketing. Somos una <strong>firma de tecnología privada</strong>. Desarrollamos soluciones de código robusto para problemas empresariales reales."
+                        </blockquote>
+                    </div>
+                    <div class="director-profile">
+                        <div class="director-avatar">RM</div>
+                        <div class="director-info">
+                            <h4>Rafael Manrique</h4>
+                            <span>Director de Tecnología</span>
+                            <p>Especialista en desarrollo de sistemas de IA y automatización empresarial. Más de 5 años creando soluciones tecnológicas personalizadas.</p>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">AI/ML</span>
+                        <span class="tech-badge">WhatsApp API</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="filename">ion_agent.py</span>
+                        </div>
+                        <pre class="code-content">
+<code><span class="keyword">class</span> <span class="class-name">IONAgent</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.response_time = <span class="number">3</span>  <span class="comment"># segundos</span>
+        self.availability = <span class="string">"24/7"</span>
+        self.missed_leads = <span class="number">0</span>
+    
+    <span class="keyword">async def</span> <span class="function">respond</span>(self, message):
+        <span class="comment"># Respuesta instantánea</span>
+        intent = <span class="keyword">await</span> self.analyze(message)
+        <span class="keyword">if</span> intent == <span class="string">"appointment"</span>:
+            <span class="keyword">return await</span> self.schedule()
+        <span class="keyword">return await</span> self.followup()</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL & FOOTER -->
+    <section id="contacto" class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Deje de perder dinero <span class="gradient-text">hoy mismo</span>.</h2>
+                <p class="cta-subtitle">Agende una demo personalizada y descubra cuánto está perdiendo por no automatizar.</p>
+                <a href="mailto:contacto@artechnocode.com?subject=Demo%20ION" class="btn btn-primary btn-large">
+                    <span class="btn-icon">📅</span>
+                    Agendar Demo con Rafael Manrique
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>AR Technocode</h3>
+                    <p>Firma de tecnología privada especializada en automatización con IA.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#solucion">ION System</a></li>
+                        <li><a href="#sectores">Sectores</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:contacto@artechnocode.com">contacto@artechnocode.com</a></li>
+                        <li><a href="https://wa.me/573001234567" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AR Technocode. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
