@@ -49,6 +49,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -1880,6 +1881,33 @@ body {
     }
 
     /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-visual {
+        order: -1;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .code-window {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .code-content {
+        padding: 16px;
+        font-size: 0.75rem;
+        overflow-x: auto;
+    }
+
+    .code-content code {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
     .director-profile {
         flex-direction: column;
         text-align: center;
