@@ -1612,13 +1612,14 @@ body {
     height: 60px;
     background: #25D366;
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     color: white;
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-    z-index: 1000;
+    z-index: 9999;
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .whatsapp-float:hover {
@@ -1629,6 +1630,7 @@ body {
 .whatsapp-float svg {
     width: 32px;
     height: 32px;
+    fill: white;
 }
 
 .whatsapp-tooltip {
@@ -1935,6 +1937,7 @@ body {
 
     /* WhatsApp Float */
     .whatsapp-float {
+        display: flex !important;
         bottom: 20px;
         right: 20px;
         width: 55px;
